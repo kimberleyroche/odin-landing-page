@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>title</title>
+    <style>
+    .flex-container {
+        display: flex;
+        justify-content: flex-end; 
+        align-items: flex-start;    
+        background-color: #1f2937;
+        height: 100%;
+        padding: 15px;
+        gap: 5px;
+
+    }
+    .flex-container > div{
+        background: #cfb9b909;
+        border: 3px solid #ffffff;
+        border-radius: 5px;
+        padding: 8px;
+        color: #ffffff;
+    }
+
+    .hero-container {
+        display: flex;
+        justify-content: center; 
+        align-items: flex-start;    
+        background-color: #1f2937;
+        height: 100%;
+        padding: 15px;
+        gap: 5px;
+
+  }
+
+    .hero-container div {
+        background: rgb(255, 255, 255);
+        border-radius: 5px;
+        padding: 8px;
+        height: 200px;
+        flex: 1 1 0%;
+        
+    }
+
+    /* only div.two is selected here */
+    .hero-container .two {
+        flex: 2 1 0%;
+    }
+
+    .random-info {
+        display: flex;
+        justify-content: center; 
+        align-items: flex-start;    
+        background-color: #ffffff;
+        color: #1f2937;
+        height: 100%;
+        padding: 15px;
+        gap: 5px;
+    }
+
+    .boxes {
+        display: flex;
+        justify-content: center; 
+        align-items: flex-start;    
+        background-color: #ffffff;
+        height: 100%;
+        padding: 15px;
+        gap: 5px;
+    }
+
+    .boxes > div{
+        background: #ffffff;
+        border: 3px solid #65baff;
+        border-radius: 5px;
+        padding: 8px;
+        width: 100px;
+        height: 100px;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+
+    </div>
+    <div class="flex-container">
+        <div class="home" style="align-items: flex-start;">Home</div>
+        <div class="item1">Store</div>
+        <div class="item2">About</div>
+        <div class="item3">Contact</div>
+    </div>
+    <div>
+        <div class="hero-container">
+            <div class="one">
+                <h1 style="margin-left: 50px;">This website is awesome</h1>
+                <p>This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast.</p>
+                <button>Click here</button>
+            </div>
+            <div class="two">
+                <img src="https://media.giphy.com/media/tBb19f3bR3ECInPavao/giphy.gif" style="width: 800px;height: 100%;">
+            </div>
+          </div>
+    </div>
+    <div class="random-info">
+        <div class="item1">
+            <h1>Some random information</h1>
+        </div>
+    </div>
+    <div class="boxes">
+        <div class="item1"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+        <div class="item4"></div>
+    </div>
+</body>
+</html>
